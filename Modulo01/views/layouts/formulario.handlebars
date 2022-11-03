@@ -1,0 +1,38 @@
+<style>
+    body {
+        display: flex;
+        min-height: 98vh;
+        place-items: center;
+        place-content: center;
+    }
+    #form-cad-post {
+        display: flex;
+        flex-flow: column wrap;
+        width: 400px;
+    }
+    label {
+        font-size: 20pt;
+    }
+    input[name="titulo"] {
+        font-size: 18pt;
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+    textarea[name="conteudo"] {
+        font-size: 16pt;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        resize: none;
+    }
+    button[type="submit"] {
+        padding: 12px;
+        font-size: 12pt;
+    }
+</style>
+<form action="/add/postagem" method="POST" autocomplete="off" id="form-cad-post">
+    <label for="titulo">Titulo</label>
+    <input type="text" name="titulo" id="titulo">
+    <label for="conteudo">Conteúdo</label>
+    <textarea name="conteudo" id="conteudo" cols="30" rows="10" id="textarea-conteudo"></textarea>
+    <button type="submit">Cadastrar Postagem</button>
+</form>

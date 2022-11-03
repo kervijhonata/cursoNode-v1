@@ -1,0 +1,33 @@
+<header>
+    <h1>Home</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="cad">Novo Post</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="title">
+        <h1>Lista de Posts:</h1>
+    </div>
+    <div class="posts">
+        {{#each posts}}
+            <div class="post">
+                <div class="post-title">{{id}}. {{titulo}}</div>
+                <p class="post-text">{{conteudo}}</p>
+                <hr>
+                <p class="post-dateinfo">{{createdAt}}</p>
+                <div class="post-options" data-post-reference="{{id}}">
+                    <button><a href="/editar/postagem/{{id}}">Editar</a></button>
+                    <button><a href="/deletar/postagem/{{id}}">Excluir</a></button>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</main>
+<footer>
+    <div class="dev-info">
+        <p>Desenvolvido por <a>Kervi Jhonata</a></p>
+        <p>JoBA Labs&reg;</p>
+    </div>
+</footer>

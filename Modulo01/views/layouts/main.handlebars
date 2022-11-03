@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagens Node.js</title>
+    <link rel="stylesheet" href="../styles/css/style.css">
+</head>
+<style>
+        * {
+    margin: 0;
+    }
+
+    body {
+    margin: 0;
+    background-color: #282f41;
+    color: white;
+    }
+
+    header {
+    width: 100%;
+    min-height: 60px;
+    background-color: blueviolet;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    }
+
+    nav {
+        width: 100%;
+        padding: 20px;
+        background-color: rgba(137, 43, 226, 0.1);
+        box-sizing: border-box;
+        position: sticky;
+        top: 0;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        flex-flow: row-reverse wrap;
+    }
+    nav ul li {
+        list-style: none;
+    }
+    nav ul li a {
+        color: black;
+        background-color: white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+        background-color: rgb(197, 160, 231);
+    }
+
+    main {
+        width: 100%;
+        min-height: 96vh;
+        padding: 30px 40px;
+        box-sizing: border-box;
+    }
+
+    footer {
+        width: 100%;
+        padding: 30px 40px;
+        box-sizing: border-box;
+    }
+
+    .posts {
+        column-count: 4;
+        gap: 20px 30px;
+        {{!-- grid-template-columns: repeat(5, 1fr);
+        display: grid; --}}
+    }
+
+    .post {
+        background-color: white;
+        color: black;
+        width: 100%;
+        min-height: 100px;
+        border-radius: 4px;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+    .post .post-title {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 12px;
+        background-color: blueviolet;
+        color: white;
+        font-size: 16pt;
+        font-family: sans-serif;
+    }
+    .post .post-text {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 20px;
+        font-size: 14pt;
+    }
+    .post hr {
+        border-color: transparent;
+        border-top-color: rgba(0, 0, 0, 0.1);
+        border-width: 1px;
+        margin: 0 18px 0 18px
+    }
+    .post .post-dateinfo {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 20px;
+        text-align: right;
+        font-size: 8pt;
+        font-family: monospace;
+        color: rgba(0, 0, 0, 0.4);
+    }
+    .post .post-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px 12px;
+        padding: 18px;
+    }
+    .post .post-options button {
+        font-size: 12pt;
+        padding: 8px;
+    }
+
+    @media screen and (max-width: 767px){
+        .posts {
+            column-count: 1;
+        }
+    }
+</style>
+<body>
+    {{{body}}}
+</body>
+</html>
